@@ -1,0 +1,4 @@
+keras
+tensorflow==1.13.1
+pandas
+numpy

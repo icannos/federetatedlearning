@@ -1,0 +1,28 @@
+2019-07-09 15:31:50.615565: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2019-07-09 15:31:54.256240: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla V100-PCIE-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.38
+pciBusID: 0000:65:00.0
+totalMemory: 15.75GiB freeMemory: 15.44GiB
+2019-07-09 15:31:54.256285: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-07-09 15:31:55.896376: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-07-09 15:31:55.896423: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-07-09 15:31:55.896433: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-07-09 15:31:55.896564: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14943 MB memory) -> physical GPU (device: 0, name: Tesla V100-PCIE-16GB, pci bus id: 0000:65:00.0, compute capability: 7.0)
+Using TensorFlow backend.
+loaded data
+agents
+master
+epoch: 0
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+epoch: 5
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+Traceback (most recent call last):
+  File "benchmark_fraude.py", line 152, in <module>
+    d[f"agen{i}_auc"] = pd.Series(metrics[:, 1])
+IndexError: index 1 is out of bounds for axis 1 with size 1
